@@ -16,7 +16,7 @@ export const ServSup = () => {
           </div>
       </div>
 
-      <div className="mx-8 md:mx-16 lg:mx-26 xl:mx-36 grid grid-cols-12 gap-4 pt-5">
+      <div className="mx-8 md:mx-16 lg:mx-26 xl:mx-36 grid grid-cols-12 gap-4 pt-5 animate-fade-left animation-once animation-duration-2000 animation-ease-linear">
         <div className="col-span-12 pt-5">
             <span className="font-bold text-[28px] sm:text-[36px] mb-4 text-primary-500 span-ourService">Soporte</span>
             <p className="pt-7 text-justify text-[16px] md:text-[18px] font-medium">TecnoMoy se enorgullece de ofrecer una gama completa de servicios de soporte tecnológico diseñados para satisfacer las necesidades cambiantes de nuestros clientes. Nuestro equipo altamente capacitado y experimentado está comprometido a proporcionar soluciones de soporte integrales y personalizadas que garanticen el máximo rendimiento y la eficiencia de los sistemas tecnológicos de nuestros clientes.</p>

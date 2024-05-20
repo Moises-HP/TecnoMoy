@@ -22,13 +22,13 @@ export const OurServices = () => {
           </div>
       </div>
 
-      <div className="mx-8 md:mx-16 lg:mx-26 xl:mx-36 grid grid-cols-12 gap-4 pt-5">
+      <div className="mx-8 md:mx-16 lg:mx-26 xl:mx-36 grid grid-cols-12 gap-4 pt-5 animate-fade-left animation-once animation-duration-2000 animation-ease-linear">
         <div className="col-span-12 pt-5">
             <span className="font-bold text-[28px] sm:text-[36px] mb-4 text-primary-500 span-ourService">Nuestros Servicios</span>
             <p className="pt-7 text-justify text-[16px] md:text-[18px] font-medium">En TecnoMoy nos especializamos en ofrecer servicios orientados al soporte y creación de páginas web. Desde la resolución ágil de problemas técnicos hasta el desarrollo completo de sitios web a medida, nuestro equipo altamente capacitado está comprometido en brindar soluciones eficaces y de calidad que impulsen la presencia digital de nuestros clientes.</p>
         </div>
 
-        <div className="col-span-12 col-start-1 sm:col-span-6 md:col-span-5 md:col-start-2 pt-5 animate-fade-left animation-once animation-duration-2000 animation-ease-linear">
+        <div className="col-span-12 col-start-1 sm:col-span-6 md:col-span-5 md:col-start-2 pt-5">
           <Link to="/nuestros-servicios/soporte">
             <Card isFooterBlurred className="w-full h-[300px]">
                 <Image
@@ -44,7 +44,7 @@ export const OurServices = () => {
             </Card>
           </Link>
         </div>
-        <div className="col-span-12 sm:col-span-6 md:col-span-5 pt-5 animate-fade-left animation-once animation-duration-2000 animation-ease-linear">
+        <div className="col-span-12 sm:col-span-6 md:col-span-5 pt-5">
           <Link to="/nuestros-servicios/paginas-web">
             <Card isFooterBlurred className="w-full h-[300px]">
                 <Image

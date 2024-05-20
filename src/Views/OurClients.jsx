@@ -21,13 +21,13 @@ export const OurClients = () => {
           </div>
       </div>
 
-      <div className="mx-8 md:mx-16 lg:mx-26 xl:mx-36 grid grid-cols-12 gap-4 pt-5">
+      <div className="mx-8 md:mx-16 lg:mx-26 xl:mx-36 grid grid-cols-12 gap-4 pt-5 animate-fade-left animation-once animation-duration-2000 animation-ease-linear">
         <div className="col-span-12 pt-5">
             <span className="font-bold text-[28px] sm:text-[36px] mb-4 text-primary-500 span-ourService">Nuestros clientes</span>
             <p className="pt-7 text-justify text-[16px] md:text-[18px] font-medium">En TecnoMoy, nos enorgullecemos de trabajar con una amplia variedad de clientes que confían en nosotros para sus necesidades tecnológicas. Nos esforzamos por construir relaciones sólidas y duraderas, basadas en la confianza y la excelencia en el servicio.</p>
         </div>
 
-        <div className="col-span-12 md:col-span-6 pt-5 animate-fade-left animation-once animation-duration-2000 animation-ease-linear">
+        <div className="col-span-12 md:col-span-6 pt-5 ">
             <Card className="py-7 mt-8">
                 <CardHeader className="pb-0 pt-2 px-4 flex-col items-center">
                     <span className="text-[#fff] p-4 md:p-5 bg-[#D36E00FF] rounded-full mb-4"><FontAwesomeIcon icon={faThumbsUp} className="px-0.5 text-[30px] md:text-[35px]"/></span>
@@ -36,7 +36,7 @@ export const OurClients = () => {
                 </CardHeader>
             </Card>
         </div>
-        <div className="col-span-12 md:col-span-6 pt-5 animate-fade-left animation-once animation-duration-2000 animation-ease-linear">
+        <div className="col-span-12 md:col-span-6 pt-5 ">
             <Card className="py-7 mt-8">
                 <CardHeader className="pb-0 pt-2 px-4 flex-col items-center">
                     <span className="text-[#fff] p-4 md:p-5 bg-[#D36E00FF] rounded-full mb-4"><FontAwesomeIcon icon={faSquareCheck} className="px-0.5 text-[30px] md:text-[35px]"/></span>
@@ -45,7 +45,7 @@ export const OurClients = () => {
                 </CardHeader>
             </Card>
         </div>
-        <div className="col-span-12 md:col-span-6 pt-5 animate-fade-left animation-once animation-duration-2000 animation-ease-linear">
+        <div className="col-span-12 md:col-span-6 pt-5 ">
             <Card className="py-7 mt-8">
                 <CardHeader className="pb-0 pt-2 px-4 flex-col items-center">
                     <span className="text-[#fff] p-4 md:p-5 bg-[#D36E00FF] rounded-full mb-4"><FontAwesomeIcon icon={faUserCheck} className="text-[30px] md:text-[33px]"/></span>
@@ -54,7 +54,7 @@ export const OurClients = () => {
                 </CardHeader>
             </Card>
         </div>
-        <div className="col-span-12 md:col-span-6 pt-5 animate-fade-left animation-once animation-duration-2000 animation-ease-linear">
+        <div className="col-span-12 md:col-span-6 pt-5 ">
             <Card className="py-7 mt-8">
                 <CardHeader className="pb-0 pt-2 px-4 flex-col items-center">
                     <span className="text-[#fff] p-4 md:p-5 bg-[#D36E00FF] rounded-full mb-4"><FontAwesomeIcon icon={faClock} className="px-0.5 text-[30px] md:text-[35px]"/></span>

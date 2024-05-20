@@ -16,7 +16,7 @@ export const ServWebsites = () => {
           </div>
       </div>
 
-      <div className="mx-8 md:mx-16 lg:mx-26 xl:mx-36 grid grid-cols-12 gap-4 pt-5">
+      <div className="mx-8 md:mx-16 lg:mx-26 xl:mx-36 grid grid-cols-12 gap-4 pt-5 animate-fade-left animation-once animation-duration-2000 animation-ease-linear">
         <div className="col-span-12 pt-5">
             <span className="font-bold text-[28px] sm:text-[36px] mb-4 text-primary-500 span-ourService">Páginas Web</span>
             <p className="pt-7 text-justify text-[16px] md:text-[18px] font-medium">En TecnoMoy, ofrecemos una gama completa de servicios de desarrollo web diseñados para satisfacer las necesidades únicas de nuestros clientes. Nuestro equipo de expertos en tecnología se dedica a crear sitios web funcionales, estéticamente atractivos y optimizados para el rendimiento, garantizando una experiencia de usuario excepcional.</p>
