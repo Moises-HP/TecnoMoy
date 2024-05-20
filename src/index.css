@@ -1,68 +1,337 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.root-layout {
+    transition: transform 1s ease; /* Aplica una transición suave al desplazamiento */
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+/* ValueSeparator */
+.inst-separador {
+    position: relative;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
 }
-a:hover {
-  color: #535bf2;
+.inst-separador::before {
+    display: block;
+    content: "";
+    border-bottom: 0;
+    flex-grow: 1;
+    border-top: 3.4px solid #D36E00FF;
 }
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.inst-separador::after {
+    display: block;
+    content: "";
+    border-bottom: 0;
+    flex-grow: 1;
+    border-top: 3.4px solid #D36E00FF;
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.inst-valores {
+    margin: 0 30px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+/* Navbar */
+.titleNav-text {
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* OurServices */
+.design-1div {
+    background-color: transparent;
+    background-image: linear-gradient(170deg, #d0891b 0%, #D36E00 100%);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10em 0 2em 0;
+    z-index: 1;
+    position: relative;
+    display: block;
+}
+.design-2div {
+    background-position: center;
+    opacity: 0.11;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: block;
+}
+.design-3div {
+    bottom: -1px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+    display: block;
+}
+.design-svg {
+    width: calc(145% + 1.3px);
+    height: 187px;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.design-pathSvg {
+    transform-origin: center;
+    transform: rotateY(0deg);
+}
+.design-4div {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.ourService-h2 {
+    color: white;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+.span-ourService {
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+    text-decoration-color: #D36E00;
+    text-decoration-style: solid;
+    text-decoration-thickness: 5px;
+}
+
+/* ServSup y SerWebsites */
+.card1-sup {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background-image: url(assets/mantenimiento.svg);
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
   }
-  a:hover {
-    color: #747bff;
+.card2-sup {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background-image: url(assets/mejora.svg);
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
   }
-  button {
-    background-color: #f9f9f9;
+.card3-sup {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background-image: url(assets/consultoria.svg);
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
   }
-}
+.card4-sup {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background-image: url(assets/educacion.svg);
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .card1-web {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background-image: url(assets/desarrollo.svg);
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+.card2-web {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background-image: url(assets/comercio.svg);
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+.card3-web {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background-image: url(assets/seo.svg);
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+.card4-web {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background-image: url(assets/mantenimiento.svg);
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .card1-sup::before,
+  .card1-sup::after,
+  .card2-sup::before,
+  .card2-sup::after,
+  .card3-sup::before,
+  .card3-sup::after,
+  .card4-sup::before,
+  .card4-sup::after,
+  .card1-web::before,
+  .card1-web::after,
+  .card2-web::before,
+  .card2-web::after,
+  .card3-web::before,
+  .card3-web::after,
+  .card4-web::before,
+  .card4-web::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: lightsalmon;
+    transition: all 0.5s;
+  }
+  
+  .card1-sup::before,
+  .card2-sup::before,
+  .card3-sup::before,
+  .card4-sup::before,
+  .card1-web::before,
+  .card2-web::before,
+  .card3-web::before,
+  .card4-web::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+  }
+  
+  .card1-sup::after,
+  .card2-sup::after,
+  .card3-sup::after,
+  .card4-sup::after,
+  .card1-web::after,
+  .card2-web::after,
+  .card3-web::after,
+  .card4-web::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+  }
+  
+  .card1-sup:hover::before,
+  .card1-sup:hover:after,
+  .card2-sup:hover::before,
+  .card2-sup:hover:after,
+  .card3-sup:hover::before,
+  .card3-sup:hover:after,
+  .card4-sup:hover::before,
+  .card4-sup:hover:after,
+  .card1-web:hover::before,
+  .card1-web:hover:after,
+  .card2-web:hover::before,
+  .card2-web:hover:after,
+  .card3-web:hover::before,
+  .card3-web:hover:after,
+  .card4-web:hover::before,
+  .card4-web:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .card1-sup:hover:after {
+    content: "Realizamos análisis exhaustivos y mantenimiento regular.";
+  }
+  .card2-sup:hover:after {
+    content: "Mantenemos nuestros sistemas actualizados con las últimas tecnologías y parches de seguridad.";
+  }
+  .card3-sup:hover:after {
+    content: "Ofrecemos asesoramiento experto y consultoría personalizada.";
+  }
+  .card4-sup:hover:after {
+    content: "Proporcionamos programas de capacitación y educación.";
+  }
+  .card1-web:hover:after {
+    content: "Creamos sitios web a medida que reflejan la identidad de tu marca y se adaptan a tus necesidades específicas.";
+  }
+  .card2-web:hover:after {
+    content: "Ofrecemos soluciones completas de comercio electrónico que incluyen el desarrollo de tiendas online, integración de pasarelas de pago, y sistemas de gestión de inventario.";
+  }
+  .card3-web:hover:after {
+    content: "Mejoramos la visibilidad de tu sitio web en los motores de búsqueda mediante técnicas avanzadas de SEO. Esto incluye la optimización de contenido, la mejora de la estructura del sitio, y la implementación de prácticas recomendadas";
+  }
+  .card4-web:hover:after {
+    content: "Ofrecemos servicios continuos de mantenimiento y actualización para asegurar que tu sitio web se mantenga al día con las últimas tendencias tecnológicas y de seguridad. ";
+  }
