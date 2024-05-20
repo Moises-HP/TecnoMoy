@@ -19,7 +19,7 @@ export const Gallery = () => {
           </div>
       </div>
 
-      <div className="mx-8 md:mx-16 lg:mx-26 xl:mx-36 grid grid-cols-12 gap-4 pt-5">
+      <div className="mx-8 md:mx-16 lg:mx-26 xl:mx-36 grid grid-cols-12 gap-4 pt-5 ">
         <div className="col-span-12 pt-5">
             <span className="font-bold text-[28px] sm:text-[36px] mb-4 text-primary-500 span-ourService">Galería</span>
             <p className="pt-7 text-justify text-[16px] md:text-[18px] font-medium">En TecnoMoy, nos enorgullecemos de nuestros logros y de los proyectos que hemos desarrollado junto a nuestros clientes. Nuestra galería de proyectos anteriores ofrece una visión detallada de nuestro trabajo y de cómo hemos ayudado a diversas empresas a alcanzar sus objetivos tecnológicos.</p>

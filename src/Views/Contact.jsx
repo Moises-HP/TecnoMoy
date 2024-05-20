@@ -58,7 +58,7 @@ export const Contact = () => {
           </div>
       </div>
 
-      <div className="mx-8 pt-10 grid grid-cols-12 gap-4">
+      <div className="mx-8 pt-10 grid grid-cols-12 gap-4 animate-fade-left animation-once animation-duration-2000 animation-ease-linear">
         <div className="col-span-12 lg:col-span-6 text-center">
             <h3 className="font-bold text-primary-500 text-[30px] md:text-[33px] ">Información del contacto</h3>
             <div className="grid grid-cols-12 gap-4">
@@ -82,7 +82,7 @@ export const Contact = () => {
                 </div>
             </div>
         </div>
-        <div className="col-span-12 lg:col-span-6 text-center">
+        <div className="col-span-12 lg:col-span-6 text-center animate-fade-left animation-once animation-duration-2000 animation-ease-linear">
         <Card className="py-4 mt-8">
           <CardBody className="px-5">
             <Input

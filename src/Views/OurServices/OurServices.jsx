@@ -28,7 +28,7 @@ export const OurServices = () => {
             <p className="pt-7 text-justify text-[16px] md:text-[18px] font-medium">En TecnoMoy nos especializamos en ofrecer servicios orientados al soporte y creación de páginas web. Desde la resolución ágil de problemas técnicos hasta el desarrollo completo de sitios web a medida, nuestro equipo altamente capacitado está comprometido en brindar soluciones eficaces y de calidad que impulsen la presencia digital de nuestros clientes.</p>
         </div>
 
-        <div className="col-span-12 col-start-1 sm:col-span-6 md:col-span-5 md:col-start-2 pt-5">
+        <div className="col-span-12 col-start-1 sm:col-span-6 md:col-span-5 md:col-start-2 pt-5 animate-fade-left animation-once animation-duration-2000 animation-ease-linear">
           <Link to="/nuestros-servicios/soporte">
             <Card isFooterBlurred className="w-full h-[300px]">
                 <Image
@@ -44,7 +44,7 @@ export const OurServices = () => {
             </Card>
           </Link>
         </div>
-        <div className="col-span-12 sm:col-span-6 md:col-span-5 pt-5">
+        <div className="col-span-12 sm:col-span-6 md:col-span-5 pt-5 animate-fade-left animation-once animation-duration-2000 animation-ease-linear">
           <Link to="/nuestros-servicios/paginas-web">
             <Card isFooterBlurred className="w-full h-[300px]">
                 <Image

@@ -17,7 +17,7 @@ export const RootLayout = () => {
     return (
         <div className='overflow-hidden root-layout'>
             <TopBar/>
-            <main className={`w-full min-h-full mt-0.5 mb-12`}>
+            <main className={`w-full min-h-full mt-[70px] sm:mt-[100px] lg:mt-[120px] mb-12 `}>
                 <Outlet />
             </main>
         </div>

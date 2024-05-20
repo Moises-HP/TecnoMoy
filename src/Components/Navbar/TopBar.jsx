@@ -32,7 +32,7 @@ export const TopBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <Navbar position="sticky" maxWidth='full' className="h-[70px] sm:h-[100px] lg:h-[120px]" classNames={{wrapper: "px-3 sm:px-0 lg:px-4 gap-1 sm:gap-2 lg:gap-4"}} isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
+        <Navbar maxWidth='full' className="fixed top-0 w-full h-[70px] sm:h-[100px] lg:h-[120px] z-50 shadow-md" classNames={{wrapper: "px-3 sm:px-0 lg:px-4 gap-1 sm:gap-2 lg:gap-4"}} isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
             <NavbarContentsMobile handleButtonClick={handleButtonClick} setIsMenuOpen={setIsMenuOpen} />
             <NavbarContent justify='start' className="hidden sm:flex">
                 <NavbarBrand className="justify-center">
