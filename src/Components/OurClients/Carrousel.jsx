@@ -30,7 +30,6 @@ export const Carrousel = () => {
       shouldResetAutoplay
       showDots={false}
       sliderClass=""
-      slidesToSlide={2}
       swipeable
     >
       {testimonials.map((testimonial, index) => (

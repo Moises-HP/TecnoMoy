@@ -6,15 +6,15 @@ import { valueValoresUs } from "../helpers/valueValoresUs.js"
 export const Us = () => {
   return (
     <>
-        <div className="w-full h-[600px] bg-gradient-to-b from-amber-500 to-orange-400 grid grid-cols-12 gap-4">
-          <div className="mx-8 col-span-12 lg:col-span-6 text-center content-center">
-              <span className="font-bold text-[28px] sm:text-[40px] mb-4 text-white">Acerca de Nosotros</span>
+        <div className="w-full h-[400px] lg:h-[600px] bg-gradient-to-b from-amber-500 to-orange-400 grid grid-cols-12 gap-4 ">
+          <div className="mx-8 col-span-12 md:col-span-6 text-center content-center">
+              <span className="font-bold text-[28px] lg:text-[32px] xl:text-[40px] text-white">Acerca de Nosotros</span>
               <br/><br/>
-              <span className="font-bold text-[28px] sm:text-[32px] mb-4 text-white">MoyTect surgió para optimizar el servicio y el seguimiento de las necesidades tecnológicas de nuestros clientes, además de lograr su confianza y satisfacción.</span>
+              <span className="font-bold text-[22px] lg:text-[26px] xl:text-[34px] text-white">MoyTect surgió para optimizar el servicio y el seguimiento de las necesidades tecnológicas de nuestros clientes, además de lograr su confianza y satisfacción.</span>
           </div>
-          <div className="mx-8 col-span-12 lg:col-span-6 text-center pt-8 content-center justify-self-center">
+          <div className="col-span-12 hidden md:grid md:col-span-6 text-center content-center justify-self-center">
             <Image
-                className='w-full h-[550px] animate__fadeIn'
+                className='w-auto h-[350px] lg:h-[400px] xl:h-[550px] animate__fadeIn'
                 alt="Precarga de imagen"
                 src={tecnologia}
             />

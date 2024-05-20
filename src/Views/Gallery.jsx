@@ -1,9 +1,10 @@
-import { Card, CardFooter } from "@nextui-org/card"
 import { useTheme } from "next-themes";
-import website from '../assets/website.svg'
-import { Image } from "@nextui-org/image";
+import { ProjectCard } from "../Components/Gallery/ProjectCard.jsx";
+import { projectTitles } from "../helpers/index.js"
+
 export const Gallery = () => {
   const { theme } = useTheme();
+
   return (
     <>
       <div className="design-1div">
@@ -26,132 +27,9 @@ export const Gallery = () => {
             <p className="pt-7 text-justify text-[16px] md:text-[18px] font-medium">Explora nuestra galería para descubrir cómo hemos transformado las ideas de nuestros clientes en realidades exitosas. Cada proyecto cuenta una historia de colaboración, dedicación y resultados excepcionales que destacan la calidad de nuestro trabajo y la satisfacción de nuestros clientes.</p>
         </div>
 
-        <div className="col-span-12 md:col-span-6 lg:col-span-4 pt-5">
-          <Card isFooterBlurred className="w-full h-[300px]">
-            <Image
-                removeWrapper
-                isZoomed
-                alt="Card example background"
-                className="z-0 w-full h-full scale-125-translate-y-6 object-cover"
-                src={website}
-            />
-              <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-center">  
-                  <p className="text-black text-[18px] font-bold text-center">Tienda de Ropa</p>
-              </CardFooter>
-          </Card>
-        </div>
-        <div className="col-span-12 md:col-span-6 lg:col-span-4 pt-5">
-          <Card isFooterBlurred className="w-full h-[300px]">
-            <Image
-                removeWrapper
-                isZoomed
-                alt="Card example background"
-                className="z-0 w-full h-full scale-125-translate-y-6 object-cover"
-                src={website}
-            />
-              <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-center">  
-                  <p className="text-black text-[18px] font-bold text-center">Reservas en un Restaurante</p>
-              </CardFooter>
-          </Card>
-        </div>
-        <div className="col-span-12 md:col-span-6 lg:col-span-4 pt-5">
-          <Card isFooterBlurred className="w-full h-[300px]">
-            <Image
-                removeWrapper
-                isZoomed
-                alt="Card example background"
-                className="z-0 w-full h-full scale-125-translate-y-6 object-cover"
-                src={website}
-            />
-              <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-center">  
-                  <p className="text-black text-[18px] font-bold text-center">Institución Académica</p>
-              </CardFooter>
-          </Card>
-        </div>
-        <div className="col-span-12 md:col-span-6 lg:col-span-4 pt-5">
-          <Card isFooterBlurred className="w-full h-[300px]">
-            <Image
-                removeWrapper
-                isZoomed
-                alt="Card example background"
-                className="z-0 w-full h-full scale-125-translate-y-6 object-cover"
-                src={website}
-            />
-              <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-center">  
-                  <p className="text-black text-[18px] font-bold text-center">Sistema de Reservas</p>
-              </CardFooter>
-          </Card>
-        </div>
-        <div className="col-span-12 md:col-span-6 lg:col-span-4 pt-5">
-          <Card isFooterBlurred className="w-full h-[300px]">
-            <Image
-                removeWrapper
-                isZoomed
-                alt="Card example background"
-                className="z-0 w-full h-full scale-125-translate-y-6 object-cover"
-                src={website}
-            />
-              <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-center">  
-                  <p className="text-black text-[18px] font-bold text-center">Agencia de Medios</p>
-              </CardFooter>
-          </Card>
-        </div>
-        <div className="col-span-12 md:col-span-6 lg:col-span-4 pt-5">
-          <Card isFooterBlurred className="w-full h-[300px]">
-            <Image
-                removeWrapper
-                isZoomed
-                alt="Card example background"
-                className="z-0 w-full h-full scale-125-translate-y-6 object-cover"
-                src={website}
-            />
-              <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-center">  
-                  <p className="text-black text-[18px] font-bold text-center">Empresa de Logística</p>
-              </CardFooter>
-          </Card>
-        </div>
-        <div className="col-span-12 md:col-span-6 lg:col-span-4 pt-5">
-          <Card isFooterBlurred className="w-full h-[300px]">
-            <Image
-                removeWrapper
-                isZoomed
-                alt="Card example background"
-                className="z-0 w-full h-full scale-125-translate-y-6 object-cover"
-                src={website}
-            />
-              <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-center">  
-                  <p className="text-black text-[18px] font-bold text-center">Empresa de Turismo</p>
-              </CardFooter>
-          </Card>
-        </div>
-        <div className="col-span-12 md:col-span-6 lg:col-span-4 pt-5">
-          <Card isFooterBlurred className="w-full h-[300px]">
-            <Image
-                removeWrapper
-                isZoomed
-                alt="Card example background"
-                className="z-0 w-full h-full scale-125-translate-y-6 object-cover"
-                src={website}
-            />
-              <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-center">  
-                  <p className="text-black text-[18px] font-bold text-center">Telemedicina</p>
-              </CardFooter>
-          </Card>
-        </div>
-        <div className="col-span-12 md:col-span-6 lg:col-span-4 pt-5">
-          <Card isFooterBlurred className="w-full h-[300px]">
-            <Image
-                removeWrapper
-                isZoomed
-                alt="Card example background"
-                className="z-0 w-full h-full scale-125-translate-y-6 object-cover"
-                src={website}
-            />
-              <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-center">  
-                  <p className="text-black text-[18px] font-bold text-center">Telemedicina</p>
-              </CardFooter>
-          </Card>
-        </div>
+        {projectTitles.map((project, index) => (
+          <ProjectCard key={index} title={project.title} imageUrl={project.imageUrl}/>
+        ))}
       </div>
     </>
   )
